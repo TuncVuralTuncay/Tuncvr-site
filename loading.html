@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="style.css">
+    <meta http-equiv="refresh" content="5;URL=index.html">
+</head>
+<script LANGUAGE='JavaScript'>
+
+var default1 = "Yükleniyor"; 
+var text1 = "Yükleniyor."; 
+var text2 = "Yükleniyor.."; 
+var text3 = "Yükleniyor..."; 
+var text4 = "Yükleniyor....";
+var changeRate = 500;
+var messageNumber = 0;
+
+function changeStatus() {
+if (messageNumber == 0) {
+window.status=default1;
+document.title=default1;
+}
+else if (messageNumber == 1) {
+window.status=text1;
+document.title=text1;
+}
+else if (messageNumber == 2) {
+window.status=text2;
+document.title=text2;
+}
+else if (messageNumber == 3) {
+window.status=text3;
+document.title=text3;
+}
+else if (messageNumber == 4) {
+window.status=text4;
+document.title=text4;
+messageNumber = 0;
+}
+
+messageNumber++;
+setTimeout("changeStatus();",changeRate);
+
+}
+
+changeStatus();
+</SCRIPT>
+<body>
+    <div class="middle">
+        <div class="bar bar1"></div>
+        <div class="bar bar2"></div>
+        <div class="bar bar3"></div>
+        <div class="bar bar4"></div>
+        <div class="bar bar5"></div>
+        <div class="bar bar6"></div>
+        <div class="bar bar7"></div>
+        <div class="bar bar8"></div>
+    </div>
+</body>
+</html>

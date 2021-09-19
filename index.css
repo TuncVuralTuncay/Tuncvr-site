@@ -1,0 +1,31 @@
+body{
+    margin: 0;
+    padding: 0;
+    background: url(https://cdn.discordapp.com/attachments/869523674535981076/889134637547401268/dark-souls-3-4k-computer-desktop-backgrounds-wallpaper-preview.jpg) no-repeat;
+    background-size: cover;
+  }
+  .sa{
+    width: 450px;
+    background: rgba(0, 0, 0, 0.4);
+    padding: 40px;
+    text-align: center;
+    margin: auto;
+    margin-top: 5%;
+    color: white;
+    font-family: 'Century Gothic',sans-serif;
+  }
+  .sa-img {
+   border-radius: 50%;
+   width: 300px;
+   height: 300px;
+  }
+  .sa h1 {
+    color: black;
+  }
+  .sa li {
+    font-size: 50px;
+    transition: all;
+    text-decoration: none;
+    display: inline-block;
+    color: black;
+  }
